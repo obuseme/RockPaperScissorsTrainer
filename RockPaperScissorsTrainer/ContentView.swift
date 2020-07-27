@@ -7,6 +7,18 @@
 
 import SwiftUI
 
+struct ButtonView: View {
+    var text: String
+    var color: Color
+    var action: () -> Void
+
+    var body: some View {
+        Button(text) {
+            action()
+        }.padding().frame(minWidth: 0, maxWidth: .infinity).background(color).border(Color.black, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+    }
+}
+
 struct ContentView: View {
     let possibleMoves = ["Rock", "Paper", "Scissors"]
     @State var currentComputerChoice = ""
@@ -59,15 +71,16 @@ struct ContentView: View {
                 }
                 Text("Progress: \(progress) of 10").padding()
                 HStack {
-                    Button("Rock") {
+                    ButtonView(text: "Rock", color: .white) {
                         recordMove(move: "Rock")
-                    }.padding().frame(minWidth: 0, maxWidth: .infinity).border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                    Button("Paper") {
+                    }
+                    ButtonView(text: "Paper", color: .gray) {
                         recordMove(move: "Paper")
-                    }.padding().frame(minWidth: 0, maxWidth: .infinity).background(Color.gray).border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                    Button("Scissors") {
+                    }
+
+                    ButtonView(text: "Scissors", color: .red) {
                         recordMove(move: "Scissors")
-                    }.padding().frame(minWidth: 0, maxWidth: .infinity).background(Color.red).border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                    }
                 }.padding().foregroundColor(.black)
             } else {
                 VStack {
