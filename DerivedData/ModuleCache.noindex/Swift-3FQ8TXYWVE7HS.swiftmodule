@@ -1,0 +1,12 @@
+---
+path:            '/Users/andrewobusek/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64-apple-ios.swiftmodule'
+dependencies:
+  - mtime:           1593631476000000000
+    path:            '/Users/andrewobusek/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64-apple-ios.swiftmodule'
+    size:            9700632
+  - mtime:           1593598310000000000
+    path:            'usr/lib/swift/Swift.swiftmodule/arm64-apple-ios.swiftinterface'
+    size:            1506808
+    sdk_relative:    true
+version:         1
+...
