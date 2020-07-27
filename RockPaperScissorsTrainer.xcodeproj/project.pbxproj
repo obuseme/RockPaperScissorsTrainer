@@ -13,7 +13,18 @@
 		818FEAE124CF11C600C5DFDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818FEAE024CF11C600C5DFDA /* Assets.xcassets */; };
 		818FEAE424CF11C600C5DFDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818FEAE324CF11C600C5DFDA /* Preview Assets.xcassets */; };
 		818FEAE724CF11C600C5DFDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818FEAE524CF11C600C5DFDA /* LaunchScreen.storyboard */; };
+		818FEAF524CF251100C5DFDA /* RockPaperScissorsTrainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818FEAF424CF251100C5DFDA /* RockPaperScissorsTrainerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		818FEAF724CF251100C5DFDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 818FEACF24CF11C400C5DFDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 818FEAD624CF11C400C5DFDA;
+			remoteInfo = RockPaperScissorsTrainer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		818FEAD724CF11C400C5DFDA /* RockPaperScissorsTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissorsTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		818FEAE324CF11C600C5DFDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		818FEAE624CF11C600C5DFDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		818FEAE824CF11C600C5DFDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		818FEAF224CF251100C5DFDA /* RockPaperScissorsTrainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsTrainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		818FEAF424CF251100C5DFDA /* RockPaperScissorsTrainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsTrainerTests.swift; sourceTree = "<group>"; };
+		818FEAF624CF251100C5DFDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		818FEAD424CF11C400C5DFDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818FEAEF24CF251100C5DFDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				818FEAD924CF11C400C5DFDA /* RockPaperScissorsTrainer */,
+				818FEAF324CF251100C5DFDA /* RockPaperScissorsTrainerTests */,
 				818FEAD824CF11C400C5DFDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				818FEAD724CF11C400C5DFDA /* RockPaperScissorsTrainer.app */,
+				818FEAF224CF251100C5DFDA /* RockPaperScissorsTrainerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +98,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		818FEAF324CF251100C5DFDA /* RockPaperScissorsTrainerTests */ = {
+			isa = PBXGroup;
+			children = (
+				818FEAF424CF251100C5DFDA /* RockPaperScissorsTrainerTests.swift */,
+				818FEAF624CF251100C5DFDA /* Info.plist */,
+			);
+			path = RockPaperScissorsTrainerTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,6 +127,24 @@
 			productReference = 818FEAD724CF11C400C5DFDA /* RockPaperScissorsTrainer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		818FEAF124CF251100C5DFDA /* RockPaperScissorsTrainerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 818FEAF924CF251100C5DFDA /* Build configuration list for PBXNativeTarget "RockPaperScissorsTrainerTests" */;
+			buildPhases = (
+				818FEAEE24CF251100C5DFDA /* Sources */,
+				818FEAEF24CF251100C5DFDA /* Frameworks */,
+				818FEAF024CF251100C5DFDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				818FEAF824CF251100C5DFDA /* PBXTargetDependency */,
+			);
+			name = RockPaperScissorsTrainerTests;
+			productName = RockPaperScissorsTrainerTests;
+			productReference = 818FEAF224CF251100C5DFDA /* RockPaperScissorsTrainerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -106,6 +156,10 @@
 				TargetAttributes = {
 					818FEAD624CF11C400C5DFDA = {
 						CreatedOnToolsVersion = 12.0;
+					};
+					818FEAF124CF251100C5DFDA = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 818FEAD624CF11C400C5DFDA;
 					};
 				};
 			};
@@ -123,6 +177,7 @@
 			projectRoot = "";
 			targets = (
 				818FEAD624CF11C400C5DFDA /* RockPaperScissorsTrainer */,
+				818FEAF124CF251100C5DFDA /* RockPaperScissorsTrainerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +190,13 @@
 				818FEAE724CF11C600C5DFDA /* LaunchScreen.storyboard in Resources */,
 				818FEAE424CF11C600C5DFDA /* Preview Assets.xcassets in Resources */,
 				818FEAE124CF11C600C5DFDA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818FEAF024CF251100C5DFDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +213,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		818FEAEE24CF251100C5DFDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				818FEAF524CF251100C5DFDA /* RockPaperScissorsTrainerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		818FEAF824CF251100C5DFDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 818FEAD624CF11C400C5DFDA /* RockPaperScissorsTrainer */;
+			targetProxy = 818FEAF724CF251100C5DFDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		818FEAE524CF11C600C5DFDA /* LaunchScreen.storyboard */ = {
@@ -323,6 +401,46 @@
 			};
 			name = Release;
 		};
+		818FEAFA24CF251100C5DFDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJHEHUCMCB;
+				INFOPLIST_FILE = RockPaperScissorsTrainerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.obusek.andy.RockPaperScissorsTrainerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RockPaperScissorsTrainer.app/RockPaperScissorsTrainer";
+			};
+			name = Debug;
+		};
+		818FEAFB24CF251100C5DFDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJHEHUCMCB;
+				INFOPLIST_FILE = RockPaperScissorsTrainerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.obusek.andy.RockPaperScissorsTrainerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RockPaperScissorsTrainer.app/RockPaperScissorsTrainer";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -340,6 +458,15 @@
 			buildConfigurations = (
 				818FEAEC24CF11C600C5DFDA /* Debug */,
 				818FEAED24CF11C600C5DFDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		818FEAF924CF251100C5DFDA /* Build configuration list for PBXNativeTarget "RockPaperScissorsTrainerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				818FEAFA24CF251100C5DFDA /* Debug */,
+				818FEAFB24CF251100C5DFDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
